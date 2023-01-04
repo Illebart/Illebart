@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+</head>
+<body>
+  <h1 id="title">Lanche preferido!</h1>
+     <p id="description">Tell us about your favorite sandwich!</p>
+  <form id="survey-form">
+<fieldset">
+  <p>Primeiramente deixa a gente saber quem é você:</p>
+    <label id="name-label"> Nome <input id="name" type="text" placeholder="your name" required></label>
+    <label id="email-label"> E-mail <input id="email" type="email" placeholder="e-mail" required></label>
+    <label id="number-label"> Idade <input id="number" type="number" min="16" max="30" placeholder="age" required></label>
+    </fieldset>
+
+<fieldset">
+    <select id="dropdown">
+            <option value="">(Tipo de hamburguer)</option>
+            <option value="1">carne bovina</option>
+            <option value="2">carne de frango</option>
+            <option value="3">linguiça</option>
+    </select>
+
+  </fieldset>
+<label for="queijo-prato">
+          <input id="queijo-prato" type="checkbox" name="queijo" class="inline" /> Queijo prato</label>
+<label for="queijo-mussarela">
+          <input id="queijo-mussarela" type="checkbox" name="queijo" class="inline" /> Queijo mussarela</label>
+<fieldset>
+  <input type="radio" value="gergelin" name="pao" class="inline">Pão com Gergelin</input>
+  <input type="radio" value="frances" name="pao" class="inline">Pão frances</input>
+  
+</fieldset>
+
+        <label for="bio">Igredientes a mais:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Descreva o que mais colocaria em seu lanche..."></textarea>
+        </label>
+
+      <input id="submit" type="submit" value="Submit" name="submit"></input>
+
+  </form>
+</body>
+</html>
